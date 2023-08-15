@@ -1,0 +1,32 @@
+As medidas separatrizes são uma série de valores que dividem um conjunto de dados ordenados em partes iguais ou em partes proporcionais. Elas são usadas na estatística e em análise de dados para identificar pontos específicos em uma distribuição que podem fornecer informações úteis sobre o conjunto de dados.
+
+As três medidas separatrizes mais comuns são quartis, decis e percentis:
+
+1. **Quartis**:
+Os quartis dividem o conjunto de dados ordenados em quatro partes iguais, representando os 25%, 50% e 75% dos dados. O primeiro quartil (Q1) é o valor que deixa 25% dos dados abaixo e 75% dos dados acima. O segundo quartil (Q2) é o mesmo que a mediana, representando o valor que divide os dados em duas partes iguais, com 50% abaixo e 50% acima. O terceiro quartil (Q3) é o valor que deixa 75% dos dados abaixo e 25% dos dados acima.
+
+2. **Decis**:
+Os decis dividem o conjunto de dados ordenados em dez partes iguais, representando os percentis 10, 20, 30, ..., 90 dos dados. O primeiro decis é o valor que deixa 10% dos dados abaixo e 90% dos dados acima, o segundo decis é o valor que deixa 20% dos dados abaixo e 80% dos dados acima, e assim por diante.
+
+3. **Percentis**:
+Os percentis dividem o conjunto de dados ordenados em 100 partes iguais, representando os valores que deixam 1% até 99% dos dados abaixo. O primeiro percentil é o valor que deixa 1% dos dados abaixo, o segundo percentil é o valor que deixa 2% dos dados abaixo, e assim sucessivamente.
+
+Essas medidas são úteis para entender a distribuição dos dados e identificar valores específicos que são representativos da amostra ou população em estudo. Por exemplo, o quartil Q1 representa o primeiro quartil, ou seja, 25% dos dados estão abaixo dele e 75% acima. Isso pode ser útil para identificar valores atípicos (outliers) ou analisar a dispersão dos dados.
+
+As medidas separatrizes são comumente usadas em gráficos boxplot, que mostram a distribuição dos dados, incluindo os quartis e potenciais outliers, fornecendo uma maneira visual de entender a dispersão dos dados.
+
+
+hist_kws:
+O parâmetro hist_kws é um dicionário que permite que você passe parâmetros extras para a função de histograma (sns.histplot()). Esses parâmetros extras são usados para controlar a aparência do gráfico de histograma gerado. Alguns exemplos comuns de parâmetros que podem ser definidos através do hist_kws incluem:
+
+bins: Especifica o número de bins ou a lista de bin edges para o histograma.
+color: Define a cor das barras do histograma.
+edgecolor: Define a cor da borda das barras.
+alpha: Define a transparência das barras, permitindo ajustar a opacidade.
+
+kde_kws:
+O parâmetro kde_kws é um dicionário que permite que você passe parâmetros extras para a função de densidade do kernel (sns.kdeplot()). Esses parâmetros extras são usados para personalizar a aparência do gráfico de densidade do kernel gerado. Alguns exemplos de parâmetros que podem ser definidos através do kde_kws incluem:
+
+bw_method: Define o método de cálculo da largura de banda da função de densidade do kernel. Valores comuns são "scott", "silverman" ou um valor numérico.
+color: Define a cor da linha da densidade do kernel.
+shade: Uma booleana que indica se a área sob a curva de densidade do kernel deve ser sombreada.
